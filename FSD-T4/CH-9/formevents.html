@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form onsubmit="myform()">
+    <input type="text" onchange="oc(this)" onfocus="of(this)" value="xyz" id="f1">
+    <input type="email" onblur="ob(this)" oninput="oi(this)" id="f2">
+    <input type="submit">
+  </form>
+  <script>
+    function myform(){
+      var u=document.getElementById("f1").value;
+      var e=document.getElementById("f2").value;
+      alert(`welcome ${u} ,Email is ${e}`);
+    }
+    function oc(x){
+      x.style.color=`blue`;
+    }
+    function of(x){
+      x.style.backgroundColor=`pink`;
+    }
+    function ob(x){
+      x.value=x.value.toUpperCase();
+    }
+    function oi(x){
+      x.style.color=`red`;
+      x.style.textTransform=`lowercase`;
+    }
+  </script>
+</body>
+</html>

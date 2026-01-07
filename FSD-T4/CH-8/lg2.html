@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let a=10; //global scope
+    //let a=30; Uncaught SyntaxError: Identifier 'a' has already been declared 
+    a=30;
+    function my(){
+      let b=20; //local scope
+      console.log(a,b);
+    }
+    console.log("a:",a);
+    console.log(b); //Uncaught ReferenceError: b is not defined
+    console.log(c); //Uncaught ReferenceError: Cannot access 'c' before initialization
+    let c=15;
+  </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+// push() and pop()
+
+    var names=["abc","xyz","pqr"]
+
+    //var res=names.push("mno"); //length of new array
+    //console.log(res); 
+    //console.log(names);
+
+    var r=names.pop(); //shows which element is removed
+    console.log(r);
+    console.log(names);
+
+// map() and filter()
+
+    var arr=[10,20,30,40,10]
+
+    let r1=arr.map(a => a*2);
+    console.log(r1);
+
+    let r2=arr.find(a => a>=30); //find returns the first element that satisfies the condition
+    console.log(r2)
+
+    let r3=arr.filter(a => a>=30); //filter returns the all elements that satisfies the condition
+    console.log(r3)
+
+    var user=[{name:"abc",id:2},{name:"abc",id:3}]
+    var r4=user.find(u => u.name==="abc");
+    console.log(r4)
+
+// includes() and forEach()
+
+    console.log(names.includes("abc"));
+    console.log(names.includes("mn"));
+
+    names.forEach(n => {console.log("Hello "+ n)});
+
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function a(){
+      alert("This is a warning message");
+      confirm1();
+    }
+    function confirm1(){
+      var res=confirm("DO YOU WANT TO CONTINUE");
+      if (res==true){
+        prompt1();
+      }
+      else{
+        alert("No");
+        return false;
+      }
+    }
+    function prompt1(){
+      n1=prompt("Enter the number");
+      prompt2();
+    }
+    function prompt2(){
+      n2=prompt("Enter the number 2");
+      a2();
+    }
+    function a2(){
+      alert(`Addition is: ${parseInt(n1)+parseInt(n2)}`);
+    }
+    a();
+  </script>
+</body>
+</html>

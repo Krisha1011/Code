@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="i1">
+  <input type="submit" onclick="fun()">
+  <script>
+    function fun(){
+
+      //var p=/abc/i; //finds abc in the string (i=insensitive)
+      //var p=/^a/i; //string must start with a
+      //var p=/[abc]/i;  //[^abc] only abc is not valid  contain a or b or c it works
+      //var p=/a$/
+      //var p=/^abc$/i
+      //var p=/^[^abc]$/ ///^[abc]$/     /^[abc]+$/
+      //var p=/^colou?r$/
+      //var p=/^[0-9]$/ //only allows one digit
+      //var p=/^[0-9]+$/  //allows more than one digits
+      //var p=/^[0-9]{10}$/ //allows only ten digits
+      //var p=/^[0-9]{6,8}$/  //digits between 6 to 8 
+      //var p=/^[a-zA-Z]{5,}$/ //only small letters aye allows
+      //var p=/^[a-zA-Z0-9]{5,}$/ //allows a-z,A-Z,0-9  /^[a-zA-Z0-9]+$/
+      var p=/^[6-9][0-9]{9}$/ 
+      var u=document.getElementById("i1").value;
+      if(p.test(u)){
+        alert("Valid");
+      }else{alert("Invalid")}
+    }
+
+  </script>
+</body>
+</html>

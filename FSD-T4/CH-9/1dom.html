@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="p1">Hello</p>
+  <h3 id="head1">HEading 3</h3>
+  <img src="1.jpg" alt="hellyah" id="i1">
+  <a href="https://www.google.com" id="link1">Link1</a>
+  <h2 title="DOM" id="t1"></h2>
+  <button onclick="my()">Manipulation</button>
+  <script>
+    function my(){
+      document.getElementById("p1").innerHTML="<b><i>Thank Nigger</i></b>";
+      document.getElementById("head1").innerHTML="<i>HI</i>";
+      document.getElementById("i1").setAttribute("src","2.png");
+      var d=document.getElementById("link1").getAttribute("href");
+      console.log(d);
+      document.getElementById("t1").removeAttribute("title");
+    }
+  </script>
+</body>
+</html>

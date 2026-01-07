@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+//Entry  control loop:
+//for loop
+    for(let i=1;i<=5;i++){
+      console.log(i);
+    }
+//while loop
+    let p=1;
+    while (p<=5){
+      console.log(p);
+      p++;
+    }
+//Exit control loop
+//do-while loop
+    let r=5;
+    do{
+      console.log(r);
+    }while(r<=5)
+
+
+//for-of loop<!--Entry control loops-->
+
+    var fruits=["Apple","Mango","Grapes"]
+    for (let f of fruits){
+      console.log(f);
+    }
+
+    for (let i in fruits){
+      console.log(fruits[i])
+    }
+
+//for-in loop
+
+    var user={name:"Abc",age:20,city:"Ahm"}
+    for (u in user){
+      console.log(u,"=",user[u])
+    }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="a()">Alert</button>
+  <input type="button" onclick="b()" value="confirm"></input>
+  <button onclick="c()">Prompt</button>
+  <script>
+    function a(){
+      alert("This is a warning message");
+    }
+    function b(){
+      var res=confirm("DO YOU WANT TO CONTINUE");
+      if (res==true){
+        alert("Yes");
+        return true;
+      }
+      else{
+        alert("No");
+        return false;
+      }
+    }
+    function c(){
+      var con=prompt("Enter your name","Vraj");
+      alert(`WELCOME ${con}!`);
+      b();
+    }
+  </script>
+</body>
+</html>

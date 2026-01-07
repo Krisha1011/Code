@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //functionname=(p1,p2-pn) => expression
+    //abc=(p1,p2) => {a+b} 
+    //abc=p1(){}
+
+    //1 with multiple parameter
+    const add=(a,b) => a+b;
+    console.log(add(3,5));
+
+    //2 with single parameter
+    //const print=(a) => `square is: ${a*a}`; also write this way
+    const print=(a) => a*a;
+    //const print=(a) => {`square is: ${a*a}`}; undefinied error
+    //const print=a => a*a; also write this way
+    console.log(print(5));
+
+    //3 without parameter
+    const out=() => "Hello";
+    console.log(out())
+
+    const test=(i,j) => {
+      let ans = i+j;
+      return ans;
+    }
+    console.log(`addition: ${test(5,5)}`);
+    
+  </script>
+</body>
+</html>

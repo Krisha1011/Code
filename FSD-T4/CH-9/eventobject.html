@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form onsubmit="form1(event)">
+    <input onchange="oc(event)">
+    <select onchange.'show(event)'>
+      <option value="pink">Pink</option>
+      <option value="blue">Blue</option>
+    </select>
+    <input type="submit">
+  </form>
+  <script>
+    function form1(e){
+      e.preventDefault();
+      alert(`ThankYou.. Eventtype is ${e.type}`);
+    }
+    function oc(x){
+      var v=x.target.value;
+      alert(`Value is ${v} and type is ${v.type}`);
+    }
+    function show(x){
+      alert(`Color is ${x.target.value}`);
+    }
+  </script>
+</body>
+</html>
