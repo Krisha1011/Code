@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //Asynchronous JS
+    //syntax
+    //let promise=new Promise((resolve,reject)=>{
+      //if (success) {resolve(r);}
+     // else {reject(err);}
+    //});
+
+    let order  = new Promise((resolve,reject)=>{
+      let success=true;
+      setTimeout(()=>{
+        if (success) {
+          resolve("Order Completed");
+        }else {
+          reject("Order Fail");
+        }
+      },3000);
+    });
+    order.then(r=>console.log(r))
+    order.catch(e=>console.log(e))
+    order.finally(()=>console.log("finally Order Completed"))
+  </script>
+
+</body>
+</html>
