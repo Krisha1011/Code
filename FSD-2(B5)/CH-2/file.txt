@@ -1,0 +1,2 @@
+welcome to node js
+welcome to event emitter
